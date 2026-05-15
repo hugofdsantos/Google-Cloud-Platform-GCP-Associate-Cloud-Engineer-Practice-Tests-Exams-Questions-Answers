@@ -1694,7 +1694,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have created a code snippet that should be triggered whenever a new file is uploaded to a Cloud Storage bucket. You want to deploy this code snippet. What should you do?
 
 - [ ] Use App Engine and configure Cloud Scheduler to trigger the application using Pub/Sub.
-- [ ] Use Cloud Functions and configure the bucket as a trigger resource.
+- [x] Use Cloud Functions and configure the bucket as a trigger resource.
 - [ ] Use Google Kubernetes Engine and configure a CronJob to trigger the application using Pub/Sub.
 - [ ] Use Dataflow as a batch job, and configure the bucket as a data source.
 
@@ -1703,7 +1703,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have been asked to set up Object Lifecycle Management for objects stored in storage buckets. The objects are written once and accessed frequently for 30 days. After 30 days, the objects are not read again unless there is a special need. The objects should be kept for three years, and you need to minimize cost. What should you do?
 
 - [ ] Set up a policy that uses Nearline storage for 30 days and then moves to Archive storage for three years.
-- [ ] Set up a policy that uses Standard storage for 30 days and then moves to Archive storage for three years.
+- [x] Set up a policy that uses Standard storage for 30 days and then moves to Archive storage for three years.
 - [ ] Set up a policy that uses Nearline storage for 30 days, then moves the Coldline for one year, and then moves to Archive storage for two years.
 - [ ] Set up a policy that uses Standard storage for 30 days, then moves to Coldline for one year, and then moves to Archive storage for two years.
 
@@ -1714,7 +1714,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Enable the Identity Aware Proxy API on the project.
 - [ ] Scan the bucket using the Data Loss Prevention API.
 - [ ] Allow only a single Service Account access to read the data.
-- [ ] Enable Data Access audit logs for the Cloud Storage API.
+- [x] Enable Data Access audit logs for the Cloud Storage API.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1722,7 +1722,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Create a single budget for all projects and configure budget alerts on this budget.
 - [ ] Create a separate billing account per sandbox project and enable BigQuery billing exports. Create a Data Studio dashboard to plot the spending per billing account.
-- [ ] Create a budget per project and configure budget alerts on all of these budgets.
+- [x] Create a budget per project and configure budget alerts on all of these budgets.
 - [ ] Create a single billing account for all sandbox projects and enable BigQuery billing exports. Create a Data Studio dashboard to plot the spending per project.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1730,7 +1730,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You are deploying a production application on Compute Engine. You want to prevent anyone from accidentally destroying the instance by clicking the wrong button. What should you do?
 
 - [ ] Disable the flag Delete boot disk when instance is deleted.
-- [ ] Enable delete protection on the instance.
+- [x] Enable delete protection on the instance.
 - [ ] Disable Automatic restart on the instance.
 - [ ] Enable Preemptibility on the instance.
 
@@ -1740,15 +1740,15 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Grant all members of the DevOps team the role of Project Editor on the organization level.
 - [ ] Grant all members of the DevOps team the role of Project Editor on the production project.
-- [ ] Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the production project.
+- [x] Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the production project.
 - [ ] Create a custom role that combines the required permissions. Grant the DevOps team the custom role on the organization level.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You are building an application that processes data files uploaded from thousands of suppliers. Your primary goals for the application are data security and the expiration of aged data. You need to design the application to: Restrict access so that suppliers can access only their own data. Give suppliers write access to data only for 30 minutes. Delete data that is over 45 days old. You have a very short development cycle, and you need to make sure that the application requires minimal maintenance. Which two strategies should you use? (Choose two.)
 
-- [ ] Build a lifecycle policy to delete Cloud Storage objects after 45 days.
-- [ ] Use signed URLs to allow suppliers limited time access to store their objects.
+- [x] Build a lifecycle policy to delete Cloud Storage objects after 45 days.
+- [x] Use signed URLs to allow suppliers limited time access to store their objects.
 - [ ] Set up an SFTP server for your application, and create a separate user for each supplier.
 - [ ] Build a Cloud function that triggers a timer of 45 days to delete objects that have expired.
 - [ ] Develop a script that loops through all Cloud Storage buckets and deletes any buckets that are older than 45 days.
@@ -1757,7 +1757,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### Your company wants to standardize the creation and management of multiple Google Cloud resources using Infrastructure as Code. You want to minimize the amount of repetitive code needed to manage the environment. What should you do?
 
-- [ ] Develop templates for the environment using Cloud Deployment Manager.
+- [x] Develop templates for the environment using Cloud Deployment Manager.
 - [ ] Use curl in a terminal to send a REST request to the relevant Google API for each individual resource.
 - [ ] Use the Cloud Console interface to provision and manage all related resources.
 - [ ] Create a bash script that contains all requirement steps as gcloud commands.
@@ -1767,7 +1767,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You are performing a monthly security check of your Google Cloud environment and want to know who has access to view data stored in your Google Cloud Project. What should you?
 
 - [ ] Enable Audit Logs for all APIs that are related to data storage.
-- [ ] Review the IAM permissions for any role that allows for data access.
+- [x] Review the IAM permissions for any role that allows for data access.
 - [ ] Review the Identity-Aware Proxy settings for each resource.
 - [ ] Create a Data Loss Prevention job.
 
@@ -1776,7 +1776,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### Your company has embraced a hybrid cloud strategy where some of the applications are deployed on Google Cloud. A Virtual Private Network (VPN) tunnel connects your Virtual Private Cloud (VPC) in Google Cloud with your company's on-premises network. Multiple applications in Google Cloud need to connect to an on-premises database server, and you want to avoid having to change the IP configuration in all of your applications when the IP of the database changes. What should you do?
 
 - [ ] Configure Cloud NAT for all subnets of your VPC to be used when egressing from the VM instances.
-- [ ] Create a private zone on Cloud DNS, and configure the applications with the DNS name.
+- [x] Create a private zone on Cloud DNS, and configure the applications with the DNS name.
 - [ ] Configure the IP of the database as custom metadata for each instance, and query the metadata server.
 - [ ] Query the Compute Engine internal DNS from the applications to retrieve the IP of the database.
 
@@ -1785,7 +1785,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You have developed a containerized web application that will serve internal colleagues during business hours. You want to ensure that no costs are incurred outside of the hours the application is used. You have just created a new Google Cloud project and want to deploy the application. What should you do?
 
 - [ ] Deploy the container on Cloud Run for Anthos, and set the minimum number of instances to zero.
-- [ ] Deploy the container on Cloud Run (fully managed), and set the minimum number of instances to zero.
+- [x] Deploy the container on Cloud Run (fully managed), and set the minimum number of instances to zero.
 - [ ] Deploy the container on App Engine flexible environment with autoscaling, and set the value min_instances to zero in the app.yaml.
 - [ ] Deploy the container on App Engine flexible environment with manual scaling, and set the value instances to zero in the app.yaml.
 
@@ -1796,7 +1796,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Grant the financial team the IAM role of Billing Account User on the billing account linked to your credit card.
 - [ ] Set up BigQuery billing export and grant your financial department IAM access to query the data.
 - [ ] Create a ticket with Google Billing Support to ask them to send the invoice to your company.
-- [ ] Change the billing account of your projects to the billing account of your company.
+- [x] Change the billing account of your projects to the billing account of your company.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1805,14 +1805,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Create a Service Account in your own project, and grant this Service Account access to BigQuery in your project.
 - [ ] Create a Service Account in your own project, and ask the partner to grant this Service Account access to BigQuery in their project.
 - [ ] Ask the partner to create a Service Account in their project, and have them give the Service Account access to BigQuery in their project.
-- [ ] Ask the partner to create a Service Account in their project, and grant their Service Account access to the BigQuery dataset in your project.
+- [x] Ask the partner to create a Service Account in their project, and grant their Service Account access to the BigQuery dataset in your project.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your web application has been running successfully on Cloud Run for Anthos. You want to evaluate an updated version of the application with a specific percentage of your production users (canary deployment). What should you do?
 
 - [ ] Create a new service with the new version of the application. Split traffic between this version and the version that is currently running.
-- [ ] Create a new revision with the new version of the application. Split traffic between this version and the version that is currently running.
+- [x] Create a new revision with the new version of the application. Split traffic between this version and the version that is currently running.
 - [ ] Create a new service with the new version of the application. Add HTTP Load Balancer in front of both services.
 - [ ] Create a new revision with the new version of the application. Add HTTP Load Balancer in front of both revisions.
 
@@ -1823,7 +1823,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Configure an SSL Proxy load balancer in front of the application servers.
 - [ ] Configure an Internal UDP load balancer in front of the application servers.
 - [ ] Configure an External HTTP(s) load balancer in front of the application servers.
-- [ ] Configure an External Network load balancer in front of the application servers.
+- [x] Configure an External Network load balancer in front of the application servers.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1831,14 +1831,14 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Create a Pub/Sub topic, and enable a Cloud Storage trigger for the Pub/Sub topic. Create an application that sends all medical images to the Pub/Sub topic.
 - [ ] Deploy a Dataflow job from the batch template, Datastore to Cloud Storage. Schedule the batch job on the desired interval.
-- [ ] Create a script that uses the gsutil command line interface to synchronize the on-premises storage with Cloud Storage. Schedule the script as a cron job.
+- [x] Create a script that uses the gsutil command line interface to synchronize the on-premises storage with Cloud Storage. Schedule the script as a cron job.
 - [ ] In the Cloud Console, go to Cloud Storage. Upload the relevant images to the appropriate bucket.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your auditor wants to view your organization's use of data in Google Cloud. The auditor is most interested in auditing who accessed data in Cloud Storage buckets. You need to help the auditor access the data they need. What should you do?
 
-- [ ] Turn on Data Access Logs for the buckets they want to audit, and then build a query in the log viewer that filters on Cloud Storage.
+- [x] Turn on Data Access Logs for the buckets they want to audit, and then build a query in the log viewer that filters on Cloud Storage.
 - [ ] Assign the appropriate permissions, and then create a Data Studio report on Admin Activity Audit Logs.
 - [ ] Assign the appropriate permissions, and the use Cloud Monitoring to review metrics.
 - [ ] Use the export logs API to provide the Admin Activity Audit Logs in the format they want.
@@ -1848,7 +1848,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You received a JSON file that contained a private key of a Service Account in order to get access to several resources in a Google Cloud project. You downloaded and installed the Cloud SDK and want to use this private key for authentication and authorization when performing gcloud commands. What should you do?
 
 - [ ] Use the command gcloud auth login and point it to the private key.
-- [ ] Use the command gcloud auth activate-service-account and point it to the private key.
+- [x] Use the command gcloud auth activate-service-account and point it to the private key.
 - [ ] Place the private key file in the installation directory of the Cloud SDK and rename it to credentials.json.
 - [ ] Place the private key file in your home directory and rename it to GOOGLE_APPLICATION_CREDENTIALS.
 
@@ -1856,7 +1856,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 ### You are working with a Cloud SQL MySQL database at your company. You need to retain a month-end copy of the database for three years for audit purposes. What should you do?
 
-- [ ] Set up an export job for the first of the month. Write the export file to an Archive class Cloud Storage bucket.
+- [x] Set up an export job for the first of the month. Write the export file to an Archive class Cloud Storage bucket.
 - [ ] Save the automatic first-of-the-month backup for three years. Store the backup file in an Archive class Cloud Storage bucket.
 - [ ] Set up an on-demand backup for the first of the month. Write the backup to an Archive class Cloud Storage bucket.
 - [ ] Convert the automatic first-of-the-month backup to an export file. Write the export file to a Coldline class Cloud Storage bucket.
@@ -1867,7 +1867,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] In the Log Viewer, filter the logs on severity ˜Error' and the name of the Service Account.
 - [ ] Create a sink to BigQuery to export all the logs. Create a Data Studio dashboard on the exported logs.
-- [ ] Create a custom log-based metric for the specific error to be used in an Alerting Policy.
+- [x] Create a custom log-based metric for the specific error to be used in an Alerting Policy.
 - [ ] Grant Project Owner access to the Service Account.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1876,7 +1876,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 
 - [ ] Use Cloud Bigtable for data storage.
 - [ ] Use Cloud SQL for data storage.
-- [ ] Use Cloud Spanner for data storage.
+- [x] Use Cloud Spanner for data storage.
 - [ ] Use Firestore for data storage.
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -1886,7 +1886,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Provision preemptible Compute Engine instances.
 - [ ] Provision Compute Engine instances with GPUs attached.
 - [ ] Provision Compute Engine instances with local SSDs attached.
-- [ ] Provision Compute Engine instances with M1 machine type.
+- [x] Provision Compute Engine instances with M1 machine type.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -1895,13 +1895,13 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Create and deploy a Custom Resource Definition per microservice.
 - [ ] Create and deploy a Docker Compose File.
 - [ ] Create and deploy a Job per microservice.
-- [ ] Create and deploy a Deployment per microservice.
+- [x] Create and deploy a Deployment per microservice.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### You will have several applications running on different Compute Engine instances in the same project. You want to specify at a more granular level the service account each instance uses when calling Google Cloud APIs. What should you do?
 
-- [ ] When creating the instances, specify a Service Account for each instance.
+- [x] When creating the instances, specify a Service Account for each instance.
 - [ ] When creating the instances, assign the name of each Service Account as instance metadata.
 - [ ] After starting the instances, use gcloud compute instances update to specify a Service Account for each instance.
 - [ ] After starting the instances, use gcloud compute instances update to assign the name of the relevant Service Account as instance metadata.
@@ -1911,7 +1911,7 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 ### You are creating an application that will run on Google Kubernetes Engine. You have identified MongoDB as the most suitable database system for your application and want to deploy a managed MongoDB environment that provides a support SLA. What should you do?
 
 - [ ] Create a Cloud Bigtable cluster, and use the HBase API.
-- [ ] Deploy MongoDB Atlas from the Google Cloud Marketplace.
+- [x] Deploy MongoDB Atlas from the Google Cloud Marketplace.
 - [ ] Download a MongoDB installation package, and run it on Compute Engine instances.
 - [ ] Download a MongoDB installation package, and run it on a Managed Instance Group.
 
@@ -1922,13 +1922,13 @@ We are so thankful for every contribution, which makes sure we can deliver top-n
 - [ ] Create a Data Studio dashboard that uses the related BigQuery tables as a source and give the BI team view access to the Data Studio dashboard.
 - [ ] Create a Service Account for the BI team and distribute a new private key to each member of the BI team.
 - [ ] Use Cloud Scheduler to schedule a batch Dataflow job to copy the data from BigQuery to the BI team's internal data warehouse.
-- [ ] Assign the IAM role of BigQuery User to a Google Group that contains the members of the BI team.
+- [x] Assign the IAM role of BigQuery User to a Google Group that contains the members of the BI team.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Your company is moving its entire workload to Compute Engine. Some servers should be accessible through the Internet, and other servers should only be accessible over the internal network. All servers need to be able to talk to each other over specific ports and protocols. The current on-premises network relies on a demilitarized zone (DMZ) for the public servers and a Local Area Network (LAN) for the private servers. You need to design the networking infrastructure on Google Cloud to match these requirements. What should you do?
 
-- [ ] 1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.
+- [x] 1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.
 - [ ] 1. Create a single VPC with a subnet for the DMZ and a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.
 - [ ] 1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public ingress traffic for the DMZ.
 - [ ] 1. Create a VPC with a subnet for the DMZ and another VPC with a subnet for the LAN. 2. Set up firewall rules to open up relevant traffic between the DMZ and the LAN subnets, and another firewall rule to allow public egress traffic for the DMZ.
